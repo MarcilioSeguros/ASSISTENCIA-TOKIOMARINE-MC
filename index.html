@@ -2,17 +2,17 @@
 <title>Cartão de Assistência Virtual</title>
 <meta property="og:title" content="Cartão de Assistência Virtual - Marcílio Seguros" />
 <meta property="og:description" content="Acesse a assistência 24h e serviços TOKIO MARINE Seguros da Marcílio Seguros." />
-<meta property="og:image" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINA-MC/preview-tokio.jpg" />
+<meta property="og:image" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINE-MC/preview-tokio.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINA-MC/" />
+<meta property="og:url" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINE-MC/" />
 <meta property="og:type" content="website" />
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Cartão de Assistência Virtual - Marcílio Seguros" />
 <meta name="twitter:description" content="Acesse a assistência 24h e serviços TOKIO MARINE Seguros da Marcílio Seguros." />
-<meta name="twitter:image" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINA-MC/preview-tokio.jpg" />
+<meta name="twitter:image" content="https://marcilioseguros.github.io/ASSISTENCIA-TOKIOMARINE-MC/preview-tokio.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -74,8 +74,8 @@
   .brand .mark{flex:1;display:flex;align-items:center;justify-content:center;min-width:0}
   .brand .divider{width:1px;height:44px;background:var(--line-strong)}
   .brand img{display:block;max-width:100%;height:auto;object-fit:contain}
-  .brand .logo-m{width:min(100%,190px)}
-  .brand .logo-a{width:min(100%,160px)}
+  .brand .logo-m{width:min(100%,180px)}
+  .brand .logo-a{width:min(100%,150px)}
 
   .head{display:flex;flex-direction:column;gap:var(--s2);align-items:center;text-align:center;padding-inline:var(--s2)}
   .head .kicker{font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
@@ -258,9 +258,14 @@
         <span class="txt"><span class="label">Atendimento via WhatsApp</span></span>
         <svg class="chev"><use href="#i-chev"/></svg>
       </a>
+      <a class="btn" data-link="seguradora-tel-demais">
+        <span class="badge"><svg><use href="#i-phone"/></svg></span>
+        <span class="txt"><span class="label">Telefone para demais locais</span><span class="sub" data-show="seguradora-tel-demais"></span></span>
+        <svg class="chev"><use href="#i-chev"/></svg>
+      </a>
       <a class="btn" data-link="seguradora-tel-metropolis">
         <span class="badge"><svg><use href="#i-phone"/></svg></span>
-        <span class="txt"><span class="label">Telefone para assistência</span><span class="sub" data-show="seguradora-tel-metropolis"></span></span>
+        <span class="txt"><span class="label">Telefone para Metrópolis</span><span class="sub" data-show="seguradora-tel-metropolis"></span></span>
         <svg class="chev"><use href="#i-chev"/></svg>
       </a>
       <button class="back" data-go="home"><svg><use href="#i-back"/></svg>Volta</button>
@@ -308,6 +313,7 @@ var CONFIG = {
     "thayane-tel":    tel("5583991646040"),
     "seguradora-whats":   whats("5511995786546"),
     "seguradora-tel-metropolis": tel0800("08003186546"),
+    "seguradora-tel-demais": tel0800("08003186546"),
     "equipe-whats": whats("558335132123"),
     "equipe-tel":   tel("5583 35132123")
   }
